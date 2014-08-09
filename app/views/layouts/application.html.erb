@@ -5,10 +5,23 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Reenie+Beanie:regular' %>
 </head>
 <body>
-
+<div class="wrap">
+  <header>
+    <h1 class="logo"><a >RUBYRIDERS LLC</a></h1>
+    <nav>
+      <ul>
+        <li><%= active_link_to content_tag(:span, 'home'), home_index_path %></li>
+        <li><%= active_link_to content_tag(:span, 'why us'), why_us_index_path %></li>
+        <li><%= active_link_to content_tag(:span, 'stack'), stack_index_path %></li>
+        <li><%= active_link_to content_tag(:span, 'clients'), clients_index_path %></li>
+        <li><%= active_link_to content_tag(:span, 'contacts'), contacts_index_path %></li>
+      </ul>
+    </nav>
+  </header>
 <%= yield %>
-
+</div>
 </body>
 </html>
