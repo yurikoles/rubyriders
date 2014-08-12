@@ -1,18 +1,17 @@
 Rails.application.routes.draw do
-  root 'home#index'
-  get 'contacts/index'
+
+  get 'contacts', to: 'contacts#index'
 
   get 'contacts/create'
 
-  get 'clients/index'
+  get 'clients', to: 'clients#index'
 
-  get 'clients/create'
+  get 'stack', to: 'stack#index'
 
-  get 'stack/index'
+  get 'values', to: 'why_us#index'
 
-  get 'why_us/index'
 
-  get 'home/index'
+  root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
