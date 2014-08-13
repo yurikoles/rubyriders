@@ -2,19 +2,19 @@
 <html>
 <head>
   <title>Rubyriders</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Reenie+Beanie:regular' %>
   <%= favicon_link_tag 'favicon.ico' %>
   <title>Custom web applications from experienced ruby on rails development company | Rubyriders LLC</title>
-  <meta name="keywords" content="ruby on rails company custom web application development" />
-  <meta name="description" content="Experienced ruby on rails company provides custom web application development tailored to specific business needs." />
+  <meta name="keywords" content="ruby on rails company custom web application development"/>
+  <meta name="description" content="Experienced ruby on rails company provides custom web application development tailored to specific business needs."/>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <h1 class="logo"><a >RUBYRIDERS LLC</a></h1>
+    <h1 class="logo"><a>RUBYRIDERS LLC</a></h1>
     <nav>
       <ul>
         <%= active_link_to content_tag(:span, 'home'), root_path,
@@ -30,7 +30,25 @@
       </ul>
     </nav>
   </header>
-<%= yield %>
+  <%= yield %>
+
+  <footer>
+    <nav>
+      <ul>
+        <li>
+          <a href="http://rubyridersllc.tumblr.com/"><img src="http://rubyriderscdn.appspot.com/images/tdotlogo.png" alt=""></a>
+        </li>
+        <li>
+          <a href="http://github.com/rubyriders"><img src="http://rubyriderscdn.appspot.com/images/gitlogo.png" alt=""></a>
+        </li>
+        <li>
+          <a href="http://twitter.com/#!/rubyriders"><img src="http://rubyriderscdn.appspot.com/images/twlogo.png" alt=""></a>
+        </li>
+      </ul>
+    </nav>
+    <div>© 2005-2014 Rubyriders. All Rights Reserved.</div>
+    <div class="decoration"></div>
+  </footer>
 </div>
 </body>
 </html>
