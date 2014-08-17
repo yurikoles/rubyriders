@@ -6,12 +6,10 @@
     <section>
 
       <figure>
-
-        <%= link_to clients_path, class:'image', do %>
+        <a href="/clients/cloverpop" class="image"><!--  active -->
           <%= image_tag('cloverpop-color.png', class: 'black') %>
           <%= image_tag('cloverpop.png', class: 'white') %>
-        <% end %>
-
+        </a>
         <figcaption>
           <h4><a href="/clients/cloverpop">Cloverpop</a></h4>
           <p><a href="/clients/cloverpop">Cloverpop is a social decision-making app that helps us make our biggest life decisions, wiser, together.</a></p>
@@ -20,8 +18,8 @@
 
       <figure>
         <a href="/clients/hp" class="image"><!--  active -->
-          <img src="/images/clients/hp-color.png" title="" alt="" class="black">
-          <img src="/images/clients/hp.png" title="" alt="" class="white">
+          <%= image_tag('hp-color.png', class: 'black') %>
+          <%= image_tag('hp.png', class: 'white') %>
         </a>
         <figcaption>
           <h4><a href="/clients/hp">HP Asia Pacific</a></h4>
@@ -31,8 +29,8 @@
 
       <figure>
         <a href="/clients/seedchange" class="image"><!--  active -->
-          <img src="/images/clients/seedchange-color.png" title="Seedchange" alt="Startup directory" class="black">
-          <img src="/images/clients/seedchange.png" title="Seedchange" alt="Startup directory" class="white">
+          <%= image_tag('seedchange-color.png', class: 'black') %>
+          <%= image_tag('seedchange.png', class: 'white') %>
         </a>
         <figcaption>
           <h4><a href="/clients/seedchange">Seedchange</a></h4>
@@ -109,7 +107,7 @@
     </section>
 
     <br><br>
-    <h3><a href="/contacts">Contact us</a> so we can make your acquaintance!</h3>
+    <h3><%= link_to 'Contact us', contacts_path %> so we can make your acquaintance!</h3>
 
   </section>
 
