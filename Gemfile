@@ -41,3 +41,10 @@ gem 'spring',        group: :development
 gem 'rails_12factor', group: :production
 gem 'jquery-ui-rails', '~> 5.0.0'
 gem 'active_link_to'
+
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0'
+  gem 'shoulda-matchers', require: false
+  gem 'factory_girl_rails', '~> 4.0'
+end
