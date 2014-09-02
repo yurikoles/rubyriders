@@ -3,10 +3,8 @@
 FactoryGirl.define do
   factory :contact do
     name 'Tester Girl'
-    email_or_phone 'test@example.com or +380666939343'
+    sequence(:email_or_phone) {|n| "test#{n}@example.com or +#{Random.rand(10000000000)}"}
     question_or_feedback 'My question or feedback'
-    ip_address '12.34.56.78'
-    created_at Date.today - 2
-    updated_at Date.today - 1
+    sequence(:ip_address) {"12.34.56.78#{n}"}
   end
 end

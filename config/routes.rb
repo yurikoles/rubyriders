@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get 'stack', to: 'stack#index'
 
-  get 'values', to: 'why_us#index'
+  get 'members', to: 'members#index'
 
 
   root 'home#index'

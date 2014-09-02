@@ -8,8 +8,8 @@
   <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Reenie+Beanie:regular' %>
   <%= favicon_link_tag 'favicon.ico' %>
   <title>Custom web applications from experienced ruby on rails development company | Rubyriders LLC</title>
-  <meta name="keywords" content="ruby on rails company custom web application development"/>
-  <meta name="description" content="Experienced ruby on rails company provides custom web application development tailored to specific business needs."/>
+  <meta name="keywords" content="ruby on rails custom web application remote agile"/>
+  <meta name="description" content="Experienced ruby on rails professionals helps startups set up and train agile teams."/>
 </head>
 <body>
 <div class="wrap">
@@ -19,13 +19,9 @@
       <ul>
         <%= active_link_to content_tag(:span, 'home'), root_path,
                            :active => :exclusive, :wrap_tag => :li %>
-        <%= active_link_to content_tag(:span, 'why us'), values_path,
+        <%= active_link_to content_tag(:span, 'members'), members_path,
                            :active => :exclusive, :wrap_tag => :li %>
-        <%= active_link_to content_tag(:span, 'stack'), stack_path,
-                           :active => :exclusive, :wrap_tag => :li %>
-        <%= active_link_to content_tag(:span, 'clients'), clients_path,
-                           :active => :exclusive, :wrap_tag => :li %>
-        <%= active_link_to content_tag(:span, 'contacts'), contacts_path,
+        <%= active_link_to content_tag(:span, 'contact'), contacts_path,
                            :active => :exclusive, :wrap_tag => :li %>
       </ul>
     </nav>

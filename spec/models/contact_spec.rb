@@ -1,25 +1,27 @@
 require 'rails_helper'
 
-RSpec.describe Contact, :type => :model do
+describe Contact do
+  let(:contact) { FactoryGirl.create(:contact) }
+
   context "valid attributes" do
     it "1 ip should be valid" do
-      expect(FactoryGirl.build(:contact).valid?).to eq(true)
+      expect(contact.valid?).to eq(true)
     end
 
     it "4 ip should be valid" do
       (1..3).each do
-        FactoryGirl.build(:contact).save
+        FactoryGirl.create(:contact, :ip_address => '11.22.33.444')
       end
-      expect(FactoryGirl.build(:contact).valid?).to eq(true)
+      expect(FactoryGirl.build(:contact, :ip_address => '11.22.33.444').valid?).to eq(true)
     end
   end
 
   context "invalid attributes" do
     it  "5 ip should not be valid" do
       (1..4).each do
-        FactoryGirl.build(:contact).save
+        FactoryGirl.create(:contact, :ip_address => '11.22.33.444')
       end
-      expect(FactoryGirl.build(:contact).invalid?).to eq(true)
+      expect(FactoryGirl.build(:contact, :ip_address => '11.22.33.444').valid?).to eq(false)
     end
   end
 end

@@ -14,15 +14,16 @@
 ActiveRecord::Schema.define(version: 20140819234621) do
 
   # These are extensions that must be enabled in order to support this database
-  enable_extension 'plpgsql'
+  enable_extension "plpgsql"
+  enable_extension "hstore"
 
-  create_table 'contacts', force: true do |t|
-    t.string   'name'
-    t.string   'email_or_phone'
-    t.text     'question_or_feedback'
-    t.string   'ip_address'
-    t.datetime 'created_at'
-    t.datetime 'updated_at'
+  create_table "contacts", force: true do |t|
+    t.string   "name"
+    t.string   "email_or_phone"
+    t.text     "question_or_feedback"
+    t.string   "ip_address"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
