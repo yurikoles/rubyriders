@@ -1,21 +1,21 @@
 source 'https://rubygems.org'
 
-# ruby '2.1.2'
+ruby '2.1.2'
 
-gem 'rails'
-gem 'pg'                                          # Use postgresql as the database for Active Record
-gem 'sass-rails'                                  # Use SCSS for stylesheets
-gem 'uglifier'                                    # Use Uglifier as compressor for JavaScript assets
-gem 'coffee-rails'                                # Use CoffeeScript for .js.coffee assets and views
+gem 'rails', '4.1.4'
+gem 'pg', '~> 0.17.1'                             # Use postgresql as the database for Active Record
+gem 'sass-rails', '~> 4.0.3'                      # Use SCSS for stylesheets
+gem 'uglifier', '>= 1.3.0'                        # Use Uglifier as compressor for JavaScript assets
+gem 'coffee-rails', '~> 4.0.0'                    # Use CoffeeScript for .js.coffee assets and views
 # gem 'therubyracer',  platforms: :ruby
 gem 'jquery-rails'                                # Use jquery as the JavaScript library
 gem 'turbolinks'                                  # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'jbuilder'                                    # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 2.0'                          # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 
 
 gem 'rails_12factor', group: :production
-gem 'jquery-ui-rails'
-# gem 'active_link_to'
+gem 'jquery-ui-rails', '~> 5.0.0'
+gem 'active_link_to'
 
 
 group :development do
