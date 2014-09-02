@@ -15,7 +15,7 @@ gem 'jbuilder'                                    # Build JSON APIs with ease. R
 
 gem 'rails_12factor', group: :production
 gem 'jquery-ui-rails'
-gem 'active_link_to'
+# gem 'active_link_to'
 
 
 group :development do
