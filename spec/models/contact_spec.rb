@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe Contact do
+RSpec.describe Contact, :type => :model do
   let(:contact) { FactoryGirl.create(:contact) }
 
   same_ip = '11.22.33.444'

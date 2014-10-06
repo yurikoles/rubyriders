@@ -28,4 +28,5 @@ group :development, :test do
   gem 'shoulda-matchers', require: false
   gem 'factory_girl_rails', '~> 4.0'
   gem 'awesome_print'                             # Format objects in a cool way: https://github.com/michaeldv/awesome_print
+  gem 'database_cleaner'
 end
