@@ -9,6 +9,5 @@ FactoryGirl.define do
     icon "Icon name"
     icon_mouseover "Icon mouseover name"
     screenshot "Shortscreenshot"
-    active false
   end
 end

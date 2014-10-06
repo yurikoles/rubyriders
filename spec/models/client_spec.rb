@@ -8,7 +8,7 @@ RSpec.describe Client, :type => :model do
       expect(client.valid?).to eq(true)
     end
 
-    it "client should be active" do
+    it "client should be inactive by default" do
       expect(client.active?).to eq(false)
     end
   end

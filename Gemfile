@@ -11,12 +11,11 @@ gem 'coffee-rails', '~> 4.0.0'                    # Use CoffeeScript for .js.cof
 gem 'jquery-rails'                                # Use jquery as the JavaScript library
 gem 'turbolinks'                                  # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'jbuilder', '~> 2.0'                          # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-
-
 gem 'rails_12factor', group: :production
 gem 'jquery-ui-rails', '~> 5.0.0'
 gem 'active_link_to'
-
+gem 'activeadmin', github: 'activeadmin'
+gem 'devise'
 
 group :development do
   gem 'spring'                                    # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
