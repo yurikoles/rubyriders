@@ -12,10 +12,33 @@
   <meta name="description" content="Experienced ruby on rails professionals helps startups set up and train agile teams."/>
 </head>
 <body>
+
 <div class="wrap">
   <header>
-    <h1 class="logo"><a>RUBYRIDERS LLC</a></h1>
-    <nav>
+
+    <h1><a>RUBYRIDERS</a></h1>
+
+    <nav class="menu">
+      
+      <!-- Close menu nav -->
+      <div class="icon-close"></div>
+
+      <!-- Menu -->
+      <ul>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">What we do</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+    </nav>
+
+    <!-- Call menu nav -->
+    <div class="icon-menu">
+      <i></i>
+    </div>
+
+    <!-- <nav>
       <ul>
         <%= active_link_to content_tag(:span, 'home'), root_path,
                            :active => :exclusive, :wrap_tag => :li %>
@@ -24,12 +47,14 @@
         <%= active_link_to content_tag(:span, 'contact'), contacts_path,
                            :active => :exclusive, :wrap_tag => :li %>
       </ul>
-    </nav>
+    </nav> -->
+
   </header>
+
   <%= yield %>
 
   <footer>
-    <nav>
+    <!-- <nav>
       <ul>
         <li>
           <a href="http://rubyridersllc.tumblr.com/"><img src="http://rubyriderscdn.appspot.com/images/tdotlogo.png" alt=""></a>
@@ -43,7 +68,7 @@
       </ul>
     </nav>
     <div>© 2005-2014 Rubyriders. All Rights Reserved.</div>
-    <div class="decoration"></div>
+    <div class="decoration"></div> -->
   </footer>
 </div>
 </body>
