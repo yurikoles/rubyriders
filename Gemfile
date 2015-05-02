@@ -1,18 +1,18 @@
 source 'https://rubygems.org'
 
-ruby '2.1.3'
+ruby '2.2.2'
 
-gem 'rails', '4.1.5'
-gem 'pg', '~> 0.17.1'                             # Use postgresql as the database for Active Record
-gem 'sass-rails', '~> 4.0.3'                      # Use SCSS for stylesheets
-gem 'uglifier', '>= 1.3.0'                        # Use Uglifier as compressor for JavaScript assets
-gem 'coffee-rails', '~> 4.0.0'                    # Use CoffeeScript for .js.coffee assets and views
+gem 'rails', '4.2.1'
+gem 'pg', '~> 0.18.1'                            # Use postgresql as the database for Active Record
+gem 'sass-rails', '~> 5.0.3'                      # Use SCSS for stylesheets
+gem 'uglifier', '~> 2.7.1'                      # Use Uglifier as compressor for JavaScript assets
+gem 'coffee-rails', '~> 4.1.0'                    # Use CoffeeScript for .js.coffee assets and views
 # gem 'therubyracer',  platforms: :ruby
 gem 'jquery-rails'                                # Use jquery as the JavaScript library
 gem 'turbolinks'                                  # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'jbuilder', '~> 2.0'                          # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 2.2'                          # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'rails_12factor', group: :production
-gem 'jquery-ui-rails', '~> 5.0.0'
+gem 'jquery-ui-rails', '~> 5.0.3'
 gem 'active_link_to'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
@@ -23,9 +23,9 @@ group :development do
 end
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0.0'
+  gem 'rspec-rails', '~> 3.2.1'
   gem 'shoulda-matchers', require: false
-  gem 'factory_girl_rails', '~> 4.0'
+  gem 'factory_girl_rails', '~> 4.5.0'
   gem 'awesome_print'                             # Format objects in a cool way: https://github.com/michaeldv/awesome_print
   gem 'database_cleaner'
 end
