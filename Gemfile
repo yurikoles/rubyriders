@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
-ruby '2.2.2'
+ruby '2.2.3'
 
-gem 'rails', '4.2.1'
-gem 'pg', '~> 0.18.1'                            # Use postgresql as the database for Active Record
+gem 'rails', '4.2.4'
+gem 'pg', '~> 0.18.1'                             # Use postgresql as the database for Active Record
 gem 'sass-rails', '~> 5.0.3'                      # Use SCSS for stylesheets
-gem 'uglifier', '~> 2.7.1'                      # Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '~> 2.7.1'                        # Use Uglifier as compressor for JavaScript assets
 gem 'coffee-rails', '~> 4.1.0'                    # Use CoffeeScript for .js.coffee assets and views
 # gem 'therubyracer',  platforms: :ruby
 gem 'jquery-rails'                                # Use jquery as the JavaScript library
@@ -14,7 +14,7 @@ gem 'jbuilder', '~> 2.2'                          # Build JSON APIs with ease. R
 gem 'rails_12factor', group: :production
 gem 'jquery-ui-rails', '~> 5.0.3'
 gem 'active_link_to'
-gem 'activeadmin', github: 'activeadmin'
+gem 'activeadmin', '~> 1.0.0.pre2'
 gem 'devise'
 
 group :development do
