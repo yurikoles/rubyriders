@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.6.3'
+ruby '2.6.6'
 
-gem 'rails', '>= 4.2.4'
-gem 'pg', '>= 0.18.1'                             # Use postgresql as the database for Active Record
+gem 'rails', '>= 4.2.4'                            # Use postgresql as the database for Active Record
 gem 'sass-rails', '>= 5.0.3'                      # Use SCSS for stylesheets
 gem 'uglifier', '>= 2.7.1'                        # Use Uglifier as compressor for JavaScript assets
 gem 'coffee-rails', '>= 4.1.0'                    # Use CoffeeScript for .js.coffee assets and views
@@ -18,6 +17,10 @@ gem 'activeadmin', '>= 1.0.0.pre2'
 gem 'devise'
 gem 'puma'
 
+group :production do
+  gem 'pg', '>= 0.18.1'
+end
+
 group :development do
   gem 'spring'                                    # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'git-smart'                                 # Allows cool command line 'smart-pull': https://github.com/geelen/git-smart
@@ -29,4 +32,5 @@ group :development, :test do
   gem 'factory_girl_rails', '>= 4.5.0'
   gem 'awesome_print'                             # Format objects in a cool way: https://github.com/michaeldv/awesome_print
   gem 'database_cleaner'
+  gem 'sqlite3'
 end
